@@ -1,3 +1,4 @@
+
 function newItem() {
   //jQuery
   //1. Adding a new item to the list of items:
@@ -30,7 +31,6 @@ function newItem() {
 }
 
 
-// FIXME: when user clicks enter, entire page refreshes and list is gone
-// FIXME: getting an error that states "$('...').sortable() is not a function"
+// FIXME: when user clicks enter from within textbox, entire page refreshes and list is gone
 // FIXME: after adding an item, it stays in the text box
-// FIXME: periodically page refreshes and erases entire list...
+// FIXME: periodically page refreshes and erases entire list & the end of the URL changes from "http://127.0.0.1:5500" to "http://127.0.0.1:5500/?ListItem=Test?"

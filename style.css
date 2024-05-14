@@ -64,6 +64,8 @@ li > .crossOutButton {
   background: none;
   border: none;
   float: right;
-  color: #025f70;
+  color: #000;
+  font-size: xx-small;
   font-weight: 800;
+  cursor: pointer;
 }
