@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TDL App</title>
+    <link href="s-transparent.ico" rel="shortcut icon" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <div class="container">
       <h2>To Do List App</h2>
-      <p><em>Double click to mark an item off, click on "X" to delete an item, and drag items to reorder.</em></p>
-
-      <form name="toDoList">
-        <input type="text" name="ListItem" id="input" />
-      </form>
-
+      <p>
+        <em
+          >Double click to mark an item off, click on "X" to delete an item, and
+          drag items to reorder.</em
+        >
+      </p>
+      <input type="text" name="ListItem" id="input" />
       <div onclick="newItem()" id="button">Add</div>
       <br />
       <ol id="list"></ol>
