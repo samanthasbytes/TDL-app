@@ -28,3 +28,9 @@ function newItem() {
   // 4. Reordering the items:
   $('#list').sortable();
 }
+
+
+// FIXME: when user clicks enter, entire page refreshes and list is gone
+// FIXME: getting an error that states "$('...').sortable() is not a function"
+// FIXME: after adding an item, it stays in the text box
+// FIXME: periodically page refreshes and erases entire list...
