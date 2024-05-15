@@ -21,17 +21,15 @@ function newItem() {
 
   //3(ii). Deleting an item:
   deleteButton.on('click', function () {
-    li.addClass('delete');
+    li.remove();
   });
 
   // 4. Reordering the items:
   $('#list').sortable();
 }
 
-// FIXME: periodically page refreshes and erases entire list & the end of the URL changes from "http://127.0.0.1:5500" to "http://127.0.0.1:5500/?ListItem=Test?"
-
-// FIXME: the alternating gray & white background on li items doesn't change when an item is deleted... // * because we're not actually deleting the items, were hiding them, so technically the alternating colors are correct
-
 // when user clicks enter from within textbox, page refreshes and list is gone // * input field was wrapped within a form element, pressing enter triggered the default behavior for form submission, causing the page to refresh
+// resolved: remove form element
 
-// FIXME: reordering the items doesnt work on mobile // ? jQuery UI library problem
+// the alternating gray & white background on li items doesn't change when an item is deleted // * this happens because we're not actually deleting the items, we're hiding them with CSS
+// resolved: solution is to change li.addClass('delete'); to li.remove();
