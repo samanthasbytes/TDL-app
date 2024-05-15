@@ -56,10 +56,6 @@ li:hover {
   cursor: grab;
 }
 
-.delete {
-  display: none;
-}
-
 li > .deleteButton {
   background: none;
   border: none;
