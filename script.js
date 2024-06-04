@@ -26,6 +26,9 @@ function newItem() {
 
   // 4. Reordering the items:
   $('#list').sortable();
+
+  // Clears text box after adding an item:
+  $('#input').val('');
 }
 
 // when user clicks enter from within textbox, page refreshes and list is gone // * input field was wrapped within a form element, pressing enter triggered the default behavior for form submission, causing the page to refresh
